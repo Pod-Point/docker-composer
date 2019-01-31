@@ -14,10 +14,9 @@ We provide the following version tags:
 
 # Usage
 
-Use as part of a multi-stage build to install Compose dependencies:
+Use as part of a multi-stage build to install Composer dependencies:
 
 ```Dockerfile
-# Dependencies
 FROM podpoint/composer:latest as vendor
 ```
 
