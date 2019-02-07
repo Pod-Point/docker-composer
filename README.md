@@ -27,11 +27,8 @@ You can then copy your vendor assets into your final image:
 COPY --from=vendor /app/vendor/ /srv/www/vendor/
 ```
 
-You can optionally supply a `composer_token` argument to authenticate against github with a token.
+You can optionally supply a `composer_token` argument to authenticate against github with a token:
 
-```yaml
-services:
-  app:
-    args:
-      composer_token: ${COMPOSER_TOKEN}
+```bash
+$ docker build --build-arg composer_token=TOKEN -t podpoint/my-image .
 ```
